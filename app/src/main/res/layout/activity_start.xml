@@ -1,33 +1,78 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.lifeistech.android.quiz.StartActivity">
+    tools:context="com.atsu.android.quiz.StartActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/wallppepar1"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="201dp">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:onClick="click"
+                android:text="words"
+                android:textSize="25sp"
+                android:layout_centerVertical="true"
+                android:layout_alignLeft="@+id/imageView2"
+                android:layout_alignStart="@+id/imageView2"
+                android:layout_weight="1"
+                android:layout_margin="28dp"
+                android:background="@drawable/button1"
+                android:typeface="monospace" />
+
+            <Button
+                android:id="@+id/button_image"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:onClick="clickImage"
+                android:text="faces"
+                android:textSize="25sp"
+                android:layout_below="@+id/button"
+                android:layout_alignLeft="@+id/imageView2"
+                android:layout_alignStart="@+id/imageView2"
+                android:layout_weight="1"
+                android:layout_margin="28dp"
+                android:background="@drawable/button1"
+                android:typeface="monospace" />
+
+        </LinearLayout>
+    </LinearLayout>
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="世界史人物当てクイズ"
-        android:id="@+id/textView"
-        android:textSize="35dp"
-        android:layout_marginTop="160dp"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="スタート"
-        android:id="@+id/button"
-        android:onClick="click"
-        android:textSize="25sp"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="80dp" />
+        android:layout_marginTop="24dp"
+        android:text="FACE\nof\nWORLD HISTORY\nQUIZ"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="35dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textIsSelectable="false"
+        android:typeface="serif" />
 
 </RelativeLayout>
