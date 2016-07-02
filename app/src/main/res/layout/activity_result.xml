@@ -73,7 +73,8 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:background="@drawable/button1"
-                android:typeface="monospace" />
+                android:typeface="monospace"
+                android:textAppearance="@style/Theme.AppCompat.Dialog" />
         </LinearLayout>
 
     </LinearLayout>

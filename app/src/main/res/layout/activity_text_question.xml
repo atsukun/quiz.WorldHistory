@@ -40,7 +40,8 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:gravity="center" />
+                android:gravity="center"
+                android:textColor="#FFFFFF" />
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -125,7 +126,9 @@
             android:text="Status"
             android:id="@+id/status"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"/>
+            android:layout_marginTop="5dp"
+            android:textIsSelectable="false"
+            android:textColor="#FFFFFF" />
 
     </LinearLayout>
 
